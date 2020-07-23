@@ -1,0 +1,6 @@
+[submodule "doc/syntaxhighlighter"]
+	path = doc/syntaxhighlighter
+	url = https://github.com/syntaxhighlighter/syntaxhighlighter.git
+[submodule "doc/simple-wiki-markup"]
+	path = doc/simple-wiki-markup
+	url = https://github.com/Byurrer/simple-wiki-markup.git

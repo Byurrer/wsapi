@@ -1,0 +1,165 @@
+
+h1, h2, h3, h4, h5, h6
+{
+	width: 100%;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding: 2px;
+	color: #222222;
+}
+
+body 
+{
+	background: #f0f0f0;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	color: #262431;
+}
+
+ul
+{
+	font-size: 12px;
+	padding-left: 15px;
+}
+
+/**************************************************************************/
+/**************************************************************************/
+
+.content
+{
+	background: white;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+/**************************************************************************/
+/**************************************************************************/
+
+.toc 
+{
+	width: 300px; 
+	height: 100vh; 
+	position: fixed; 
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	top: 0;
+}
+
+.toc .block
+{
+	padding-left: 10px;
+	justify-content: left;
+}
+
+.toc .hlink
+{
+	font-weight: bold;
+	flex-basis: 100%;
+	margin: 5px 10px;
+}
+
+/**************************************************************************/
+
+.doc
+{
+	margin-left: 310px;
+}
+
+.doc a.h1link
+{
+	color: #000;
+}
+
+.doc a.h2link
+{
+	color: #ffffff;
+}
+
+.doc .query-part
+{
+	min-width: 300px;
+	flex-grow: 1;
+}
+
+.doc .arg-name
+{
+	min-width: 120px;
+	flex-grow: 1;
+}
+
+.doc .arg-name span
+{
+	font-size: 16px; 
+	font-weight: 600; 
+	padding-right: 20px;
+}
+
+.doc .arg-desc
+{
+	padding-left: 25px;
+	flex-grow: 2;
+}
+
+.doc .section
+{
+	width: 100%;
+	margin-bottom: 20px;
+	word-break: break-word;
+	flex-grow: 1;
+}
+
+.doc .note
+{
+
+}
+
+.doc .todo
+{
+
+}
+
+.doc .meta
+{
+	font-size: 13px;
+	color: #555;
+	margin: 5px 0;
+	padding: 0;
+}
+
+.footer 
+{
+	left: 0;
+	bottom: 0; 
+	/*position: fixed;*/
+	font-weight: 600;
+	font-size: 14px;
+	color: rgb(250, 250, 250);
+	letter-spacing: 0.08em;
+	background: #343e47;
+	border-top: 2px solid #869dd3;
+}
+
+/*########################################################################*/
+
+.syntaxhighlighter table td.code .container 
+{
+	max-width: 512px !important;
+}
+
+/**************************************************************************/
+/**************************************************************************/
+		
+@media (max-width: 900px) 
+{
+	#left_pan 
+	{
+		position: static!important;
+		width: 100% !important;
+		height: auto !important;
+	}
+			
+	#pan_right 
+	{
+		margin-left: 0!important;
+		padding-top: 10px;
+	}
+}

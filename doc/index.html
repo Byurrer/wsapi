@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="[[description]]" />
+  <title>[[title]]</title>
+	<link rel="stylesheet" href="https://a.dsncdn.net/css/layout.css">
+	<link rel="stylesheet" href="https://a.dsncdn.net/css/elements.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="syntaxhighlighter/src/sass/shCore.css">
+	<link rel="stylesheet" href="syntaxhighlighter/src/sass/shCoreDefault.css">
+	<link rel="stylesheet" href="syntaxhighlighter/src/sass/shThemeDefault.css">
+</head>
+<body>
+	<div class="str wrapper flex-iva-top flex-iha-left" style="max-width: 100%;">
+		<div class="str content pad-10px">
+			[[content]]
+		</div>
+	</div>
+
+	<script src="syntaxhighlighter/src/js/XRegExp.js"></script>
+	<script src="syntaxhighlighter/src/js/shCore.js"></script>
+	<script src="syntaxhighlighter/src/js/shAutoloader.js"></script>
+
+	<script>
+		SyntaxHighlighter.autoloader(
+			['js','syntaxhighlighter/src/js/shBrushJScript.js'],
+			['php','syntaxhighlighter/src/js/shBrushPhp.js'],
+			['plain','syntaxhighlighter/src/js/shBrushPlain.js'],
+		);
+		SyntaxHighlighter.all();
+	</script>
+</body>
+</html>
